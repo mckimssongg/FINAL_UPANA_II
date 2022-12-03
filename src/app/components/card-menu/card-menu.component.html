@@ -1,12 +1,14 @@
 <div class="card w-card-menu h-card-menu">
-  <img class="card-img-top" [src]="imagen" alt="Card image cap">
+  <img class="card-img-top" [src]="imagen" alt="Card image cap" />
   <div class="card-body">
-    <h5 class="card-title">{{nombre}}</h5>
-    <p class="card-text">{{descripcion}}</p>
+    <h5 class="card-title">{{ nombre }}</h5>
+    <p class="card-text">{{ descripcion }}</p>
     <!-- precio -->
-    <p class="card-text">Q {{precio}}</p>
-    <div class="d-grid gap-2  mx-auto">
-      <button href="#" class="btn btn-primary ">Agregar a la compra</button>
+    <p class="card-text">Q {{ precio }}</p>
+    <div class="d-grid gap-2 mx-auto">
+      <button mat-raised-button color="success" class="w-100">
+        Agregar a la compra
+      </button>
     </div>
   </div>
 </div>
