@@ -1,0 +1,19 @@
+{
+  "menus": [
+    {
+      "id": 1,
+      "nombre": "Huevos a la mexicana",
+      "descripcion": "Huevos revueltos con chorizo",
+      "precio": 100,
+      "imagen": "https://cocinamia.com.mx/wp-content/uploads/2021/01/huevos-a-la-mexicana-1-1100x500.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Hamburguesa",
+      "descripcion": "Hamburguesa con queso y bacon y papas fritas",
+      "precio": 100,
+      "imagen": "https://estaticos-cdn.prensaiberica.es/clip/cc8e43c6-39b0-44c9-8ec5-67a766f2b662_16-9-discover-aspect-ratio_default_0.jpg"
+    }
+
+  ]
+}
