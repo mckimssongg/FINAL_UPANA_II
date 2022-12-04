@@ -6,9 +6,17 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./carrito.component.css'],
 })
 export class CarritoComponent implements OnInit {
-  @Input() dataSourceProductos: any[] = [];
-  displayedColumns: string[] = ['name', 'price', 'quantity'];
+  @Input() dataSource: any[] = [
+    {
+      nombre: 'Cafe',
+      precio: 10,
+      cantidad: 2,
+    },
+  ];
+  displayedColumns: string[] = ['nombre', 'precio', 'cantidad'];
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('dataSource', this.dataSource);
+  }
 }

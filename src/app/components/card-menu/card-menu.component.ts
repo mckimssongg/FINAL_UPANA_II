@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Menu } from 'src/app/interfaces/menu';
 @Component({
   selector: 'app-card-menu',
@@ -12,4 +12,18 @@ export class CardMenuComponent implements OnInit {
   @Input() imagen: string = '';
 
   ngOnInit(): void {}
+
+  @Output() addProduct = new EventEmitter<Menu>();
+
+  addProductToCart() {
+    const product: Menu = {
+      nombre: this.nombre,
+      precio: this.precio,
+      descripcion: this.descripcion,
+      imagen: this.imagen,
+    };
+
+    this.addProduct.emit(product);
+    console.log('addProductToCart', product);
+  }
 }

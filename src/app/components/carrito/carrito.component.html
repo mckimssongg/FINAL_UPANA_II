@@ -3,22 +3,22 @@
   <table
     class="table table-striped table-bordered table-hover table-sm"
     mat-table
-    [dataSource]="dataSourceProductos"
+    [dataSource]="dataSource"
     class="w-100 p-2 container border border-dark border-opacity-25"
   >
-    <ng-container matColumnDef="name">
+    <ng-container matColumnDef="nombre">
       <th mat-header-cell *matHeaderCellDef>Nombre de Producto</th>
-      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.nombre }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="price">
+    <ng-container matColumnDef="precio">
       <th class="text-center" mat-header-cell *matHeaderCellDef>Precio</th>
-      <td class="text-center" mat-cell *matCellDef="let element">{{ element.price }}</td>
+      <td class="text-center" mat-cell *matCellDef="let element">{{ element.precio }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="quantity">
+    <ng-container matColumnDef="cantidad">
       <th class="text-end" mat-header-cell *matHeaderCellDef>Cantidad</th>
-      <td class="text-center" mat-cell *matCellDef="let element">{{ element.quantity }}</td>
+      <td class="text-center" mat-cell *matCellDef="let element">{{ element.cantidad }}</td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
