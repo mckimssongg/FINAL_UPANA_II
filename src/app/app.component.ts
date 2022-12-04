@@ -9,6 +9,7 @@ import { count } from 'rxjs';
 export class AppComponent {
   title = 'PROGRAMII_FINAL_UPANAA';
   dataSourceProductos: any[] = [];
+  total_compra: number = 0;
   getListaProductos(event: any) {
     let lista_data = [...event];
     let lista_productos_por_cantidad = [];
@@ -30,5 +31,11 @@ export class AppComponent {
       }
     }
     this.dataSourceProductos = lista_productos_por_cantidad;
+    this.total_compra = 0;
+    for (let i = 0; i < this.dataSourceProductos.length; i++) {
+      this.total_compra +=
+        this.dataSourceProductos[i].precio *
+        this.dataSourceProductos[i].cantidad;
+    }
   }
 }

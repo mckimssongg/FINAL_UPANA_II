@@ -13,7 +13,7 @@
 
     <ng-container matColumnDef="precio">
       <th class="text-center" mat-header-cell *matHeaderCellDef>Precio</th>
-      <td class="text-center" mat-cell *matCellDef="let element">{{ element.precio }}</td>
+      <td class="text-center" mat-cell *matCellDef="let element">Q {{ element.precio }}</td>
     </ng-container>
 
     <ng-container matColumnDef="cantidad">
@@ -25,7 +25,7 @@
   </table>
   <!-- total angular material -->
   <div class="d-flex justify-content-end px-2 mt-2">
-    <h3 class="text-center">Total: Q 000</h3>
+    <h3 class="text-center">Total: Q {{total}}</h3>
   </div>
   <div class="d-grid gap-2 mx-auto">
     <button

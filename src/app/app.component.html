@@ -11,7 +11,7 @@
       <app-solicitud (data)="getListaProductos($event)"></app-solicitud>
     </div>
     <div class="col-12 col-md-4">
-      <app-carrito [dataSource]="dataSourceProductos"></app-carrito>
+      <app-carrito [dataSource]="dataSourceProductos" [total]="total_compra"></app-carrito>
     </div>
   </div>
 </div>

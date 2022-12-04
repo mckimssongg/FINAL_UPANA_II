@@ -16,7 +16,7 @@ export class CarritoComponent implements OnInit {
   displayedColumns: string[] = ['nombre', 'precio', 'cantidad'];
   constructor() {}
 
-  ngOnInit(): void {
-    console.log('dataSource', this.dataSource);
-  }
+  @Input() total: number = 0;
+
+  ngOnInit(): void {}
 }
